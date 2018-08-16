@@ -11,25 +11,7 @@ const allUsersQuery = gql`
   }
 `;
 
-const renderResults = (results1) => {
-  const results = [
-    {
-      userName: 'sid12312312312',
-      email: 'test1@test.com',
-    },
-    {
-      userName: 'sid123',
-      email: 'test2@test.com',
-    },
-    {
-      userName: 'sid4',
-      email: 'test4@test.com',
-    },
-    {
-      userName: 'sid6',
-      email: 'test6@test.com',
-    },
-  ];
+const renderResults = (results) => {
   const userItem = results.map(item => (
     <div key={item.userName} className="allUsers-render">
       <div className="allUsers-userName">

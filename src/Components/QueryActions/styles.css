@@ -23,3 +23,28 @@
   padding-right: 5px;
 }
 
+.createUser-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.createUser-main > * {
+  font-size: 22px;
+}
+
+.createUser-input {
+  
+}
+
+.createUser-submit {
+}
+
+.error {
+  color: rgb(230, 71, 71);
+  font-weight: bold;
+}
+
+.ok {
+  color:rgb(67, 161, 67);
+  font-weight: bold;
+}
