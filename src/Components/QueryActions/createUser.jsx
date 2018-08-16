@@ -64,12 +64,14 @@ class CreateUser extends React.Component {
   }
 
   render() {
+    const { userName, email } = this.state;
     const { handleChange, sendRequest } = this;
     return (
       <div className="createUser-main">
         <input
           type="text"
           name="userName"
+          value={userName}
           placeholder="Enter User Name"
           onChange={handleChange}
           className="createUser-input"
@@ -77,6 +79,7 @@ class CreateUser extends React.Component {
         <input
           type="text"
           name="email"
+          value={email}
           placeholder="Enter email"
           onChange={handleChange}
           className="createUser-input"
@@ -87,7 +90,6 @@ class CreateUser extends React.Component {
           onClick={sendRequest}
         >
           Create User
-
         </button>
       </div>
 
